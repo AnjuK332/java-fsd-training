@@ -1,5 +1,0 @@
-select reviewer.rev_name
-from Reviewer, Rating
-where rating.rev_id = reviewer.rev_id
-and rating.rev_stars>=8
-and reviewer.rev_name is not null;

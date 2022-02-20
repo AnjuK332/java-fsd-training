@@ -1,0 +1,14 @@
+select dir_fname, dir_lname
+from  Director
+where dir_id in (
+select dir_id 
+from Movie_direction
+where mov_id in(
+select mov_id 
+from Movie_cast where role = any (
+select role 
+from Movie_cast 
+where mov_id in (
+select  mov_id 
+from Movie 
+where mov_title='Eyes Wide Shut'))));

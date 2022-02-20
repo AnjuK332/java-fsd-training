@@ -1,0 +1,10 @@
+select * 
+from Actor 
+where act_id in(
+select act_id 
+from movie_cast 
+where mov_id in (
+select mov_id 
+from movie 
+where mov_title='Deliverance'
+));

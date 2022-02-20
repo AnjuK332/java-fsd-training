@@ -1,9 +1,0 @@
-select mov_title, mov_year, mov_dt_rel, dir_fname, dir_lname, act_fname, act_lname 
-from Movie a, Movie_direction b, Director c, Rating d, Reviewer e, Actor f, Movie_cast g 
-where a.mov_id=b.mov_id 
-and b.dir_id=c.dir_id 
-and a.mov_id=d.mov_id 
-and d.rev_id=e.rev_id 
-and a.mov_id=g.mov_id 
-and g.act_id=f.act_id 
-and e.rev_name ="Neal Wruck";

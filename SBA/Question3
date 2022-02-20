@@ -1,0 +1,5 @@
+select movie.mov_title 
+from Movie,Movie_genres,genres 
+where movie.mov_id=movie_genres.mov_id
+and  genres.gen_id=movie_genres.gen_id
+and genres.gen_title="Horror";

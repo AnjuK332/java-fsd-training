@@ -1,6 +1,0 @@
-create database anjudb;
-use anjudb;
-create table EMP 
-(Empid int not null, Empname varchar(20),age int);
-select*from EMP;
-insert into EMP (Empid , Empname,age)values (1, 'Anju', 22);
